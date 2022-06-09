@@ -12,10 +12,34 @@
     grid-row-gap: 5%;
     grid-column-gap: 3%;
     margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .recipe-preview {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding: 1em 2em 1em 2em;
     background-color: #ffffff;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 1px;
+    border-radius: 6px;
+}
+
+.recipe-button {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+p.recipe-method {
+    line-height: 1em;
+}
+
+button.recipe {
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    background-color: #827397;
+    box-shadow: none;
+    border-style: solid;
+    border-color: #827397;
+    border-radius: 6px;
+    color: #ffffff;
 }
