@@ -1,3 +1,9 @@
+@media (max-width: 1024px) {
+    .recipe-list {
+        grid-template-columns: none !important;
+    }
+}
+
 .recipe-list {
     display: grid;
     grid-auto-flow: row;
