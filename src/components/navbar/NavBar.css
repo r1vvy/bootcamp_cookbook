@@ -15,10 +15,17 @@
     margin-left: auto;
     white-space: nowrap;
     margin-right: 20%;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 6px;
-    padding: 0px 5px 5px 5px;
+  }
+
+  .navbar button.recipe-create {
+      background-color: transparent;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 6px;
+      border-color: white;
+      padding: 0.4em;
+      font-size: 0.9em;
+      color: white;
   }
   .navbar a {
     text-decoration: none;

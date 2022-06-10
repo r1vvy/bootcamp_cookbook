@@ -16,7 +16,7 @@ const RecipesList = ({ recipes, title }) => {
           </p>
           <div className="recipe-button">
           <Link to={`/recipes/${recipe.id}`}>
-            <button className="recipe">Cook this</button>
+            <button className="recipe-cook-button">Cook this</button>
           </Link>
           </div>
         </div>
