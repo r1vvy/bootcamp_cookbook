@@ -23,9 +23,14 @@
       border-width: 1px;
       border-radius: 6px;
       border-color: white;
-      padding: 0.4em;
-      font-size: 0.9em;
+      padding: 0.6em;
+      font-size: 1em;
       color: white;
+      margin-left: 1.5em;
+  }
+  .navbar button.recipe-create:hover {
+    color: #E9D5CA;
+    border-color: #ffffff;
   }
   .navbar a {
     text-decoration: none;

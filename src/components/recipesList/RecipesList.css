@@ -1,6 +1,7 @@
 @media (max-width: 1024px) {
     .recipe-list {
         grid-template-columns: none !important;
+        padding: 10px;
     }
 }
 .recipe-list {
@@ -40,13 +41,14 @@ p.recipe-method {
     line-height: 1.2em;
 }
 button.recipe-cook-button {
-    padding: 0.3em 0.8em 0.3em 0.8em;
+    padding: 0.4em 0.8em 0.4em 0.8em;
     background-color: #4D4C7D;
     box-shadow: none;
     border-style: solid;
     border-color: #4D4C7D;
     border-radius: 6px;
     color: #ffffff;
+    font-size: 1em;
 }
 button.recipe-cook-button:hover {
     background-color: #827397;
