@@ -1,3 +1,14 @@
+@media screen and (min-width: 460px) {
+
+}
+
+.recipe-set-ingredients {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.recipe-set-ingredients p {
+    margin-right: 5px;
+}
 .create {
     margin-top: 2em;
     display: flex;
@@ -9,7 +20,7 @@
 input[type="text"] {
     display: block;
     overflow: hidden;
-    width: 25em;
+    width: 32em;
     margin-bottom: 0.5em;
     height: 1.5em;
     border: none;
@@ -18,7 +29,7 @@ input[type="text"] {
 
 input.ingredients {
     display: inline-flex;
-    width: 20em;
+    width: 27em;
     margin-right: 1em;
 }
 label {
@@ -27,7 +38,7 @@ label {
 }
 
 textarea {
-    width: 334px;
+    width: 32em;
     border: none;
     border-radius: 2px;
     height: 40px;

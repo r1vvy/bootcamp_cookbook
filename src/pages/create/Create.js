@@ -39,7 +39,7 @@ const Create = () => {
   return (
     <div className="create">
       <h2>Add a new recipe</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <label>Recipe title:</label>
         <input
           type="text"
@@ -52,11 +52,16 @@ const Create = () => {
           className="ingredients"
           type="text"
           required
-          value={InputDATA}
+          value={ InputDATA }
           onChange= {(e) => setInputData(e.target.value)}
         />
+        <button type="button" className="add" onClick={ handleClick }>
+          add
+        </button>
         <h4>Current ingredients:</h4>
-        <p>{ingredients}</p>
+        <div className="recipe-set-ingredients">
+          {ingredients.map((item) => <p> { item } </p>)}
+        </div>
         <label>Recipe method:</label>
         <textarea
           className="method"
@@ -72,12 +77,9 @@ const Create = () => {
           value={cookingTime}
           onChange= {(e) => setCookTime(e.target.value)}
         />
-        {!isPending && <button className="submit">submit</button>}
+        {!isPending && <button className="submit" onClick={ handleSubmit }>submit</button>}
         {isPending && <button className="submit" disabled>Adding recipe...</button>}
       </form>
-      <button className="add" onClick={ handleClick }>
-        add
-        </button>
     </div>
   );
 };
