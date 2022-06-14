@@ -8,15 +8,21 @@ const Create = () => {
   const id = uuid().slice(0, 8);
   const [title, setTitle] = useState("");
   const [ingredients, setIngredients] = useState([]);
+  const [InputDATA, setInputData] = useState("");
   const [method, setMethod] = useState("");
   const [cookingTime, setCookTime] = useState("");
-
   const [isPending, setIsPending] = useState(false);
   let navigate = useNavigate();
+
+  const handleClick = () => {
+    setIngredients(ingredients => [...ingredients, InputDATA])
+  }
+
 
   const handleSubmit = (e) => {
     e.preventDefault(); // prevents page refresh
     const recipe = { id, title, ingredients, method, cookingTime};
+    recipe.cookingTime += " minutes"; 
 
     setIsPending(true);
 
@@ -46,14 +52,11 @@ const Create = () => {
           className="ingredients"
           type="text"
           required
-          value={ingredients}
-          onChange= {(e) => setIngredients(e.target.value)}
+          value={InputDATA}
+          onChange= {(e) => setInputData(e.target.value)}
         />
-        <button className = "add">
-        add
-        </button>
         <h4>Current ingredients:</h4>
-        <p> {ingredients} </p>
+        <p>{ingredients}</p>
         <label>Recipe method:</label>
         <textarea
           className="method"
@@ -70,8 +73,11 @@ const Create = () => {
           onChange= {(e) => setCookTime(e.target.value)}
         />
         {!isPending && <button className="submit">submit</button>}
-        {isPending && <button disabled>Adding recipe...</button>}
+        {isPending && <button className="submit" disabled>Adding recipe...</button>}
       </form>
+      <button className="add" onClick={ handleClick }>
+        add
+        </button>
     </div>
   );
 };

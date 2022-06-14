@@ -57,6 +57,17 @@
       "method": "visu samet katlā un vāra",
       "cookingTime": "7 minutes",
       "id": "FdqZKBL"
+    },
+    {
+      "id": "19d51ffd",
+      "title": "Pizza",
+      "ingredients": [
+        " Test",
+        " Test2",
+        " 3. Cheese"
+      ],
+      "method": "Add some cheese on it",
+      "cookingTime": "15 minutes"
     }
   ]
 }

@@ -42,6 +42,9 @@ button.add {
     color: white;
     font-weight: bold;
 }
+button.add:hover, button.submit:hover {
+    background-color: #E9D5CA;
+}
 button.submit {
     width: 5em;
     height: 2em;
