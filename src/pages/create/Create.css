@@ -1,0 +1,64 @@
+.create {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 35%;
+    align-items: center;
+}
+input[type="text"] {
+    display: block;
+    overflow: hidden;
+    width: 25em;
+    margin-bottom: 0.5em;
+    height: 1.5em;
+    border: none;
+    border-radius: 2px;
+}
+
+input.ingredients {
+    display: inline-flex;
+    width: 20em;
+    margin-right: 1em;
+}
+label {
+    display: flex;
+    padding-bottom: 0.5em;
+}
+
+textarea {
+    width: 334px;
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+}
+
+button.add {
+    width: 4em;
+    height: 1.65em;
+    border: none;
+    border-radius: 2px;
+    background-color: #4D4C7D;
+    color: white;
+    font-weight: bold;
+}
+button.submit {
+    width: 5em;
+    height: 2em;
+    border: none;
+    border-radius: 2px;
+    background-color: #4D4C7D;
+    color: white;
+    font-weight: bold;
+    display: block;
+    margin: 1em auto;
+}
+h2 {
+    white-space: nowrap;
+}
+
+h4 {
+    margin: auto;
+    font-weight: normal;
+    font-size: smaller;
+}

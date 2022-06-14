@@ -32,7 +32,7 @@ const Recipe = () => {
               })}
             </div>
           </div>
-          <p className="recipe-method"> {recipe.method} </p>
+          <p className="method"> {recipe.method} </p>
         </article>
       )}
     </div>
