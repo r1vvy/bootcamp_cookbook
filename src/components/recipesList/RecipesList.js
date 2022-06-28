@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import "./RecipesList.css";
 
-const RecipesList = ({ recipes, title }) => {
+const RecipesList = ({ recipes }) => {
   return (
     <div className="recipe-list">
       {recipes.map((recipe) => (
